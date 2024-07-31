@@ -15,19 +15,20 @@ const About = () => {
             whileInView={`show`}
             viewport={{once: false, amount: 0.2}}
             className={`xl:pl-[135px]`}>
-            <h1 className={'mb-9'}>Let's Talk About W'Food</h1>
+            <h1 className={'mb-9'}>Let's Talk About Sunrise Sips</h1>
             <p className={'mb-8'}>
-                Mauris nam et ipsum ipsum in. Risus nullam in sit mi est justo at fringilla. Consequat ac fringilla quis
-                enim, sit ipsum. Laoreet eget metus morbi convallis gravida elementum facilisis. Neque enim quis fusce
-                amet. Pellentesque netus vel eu
+                Sunrise Sips is where every morning begins with warmth and a burst of flavour and in the heart of Canberra. Nestled
+                in the vibrant cityscape, our coffee shop is a haven for coffee enthusiasts but also acts as a family friendly space for parents
+                with children. As the first rays of dawn paint the sky with hues of gold, we invite you to embark on a journey, awakening your
+                senses with the rich aroma of freshly brewed coffee and the tantalizing taste of our Arabica beans.
             </p>
-            <p className={'mb-10'}>
-                posuere ultrices facilisi. Senectus velit lobortis velit arcu varius lectus mattis. Dictum aenean duis
-                aliquet Tortor purus egestas urna scelerisque vel ornare lectus ultricies. Nisi, eu ut ultricies enim
-                enim amet porttitor. Volutpat ac tellus volutpat eget volutpat orci enim, ut a. Turpis adipiscing
-                eleifend dignissim viverra euismod ultrices.
-            </p>
-            <Button>Read more</Button>
+            {/*<p className={'mb-10'}>*/}
+            {/*    posuere ultrices facilisi. Senectus velit lobortis velit arcu varius lectus mattis. Dictum aenean duis*/}
+            {/*    aliquet Tortor purus egestas urna scelerisque vel ornare lectus ultricies. Nisi, eu ut ultricies enim*/}
+            {/*    enim amet porttitor. Volutpat ac tellus volutpat eget volutpat orci enim, ut a. Turpis adipiscing*/}
+            {/*    eleifend dignissim viverra euismod ultrices.*/}
+            {/*</p>*/}
+            <Button variant={'orange'} >Read more</Button>
         </motion.div>
         {/*img*/}
         <motion.div

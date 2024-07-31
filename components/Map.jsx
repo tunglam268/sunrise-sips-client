@@ -15,18 +15,7 @@ const markets = [
         subtitle: '',
         image: '/map/1.png'
     },
-    // {
-    //     position: [33.9478, -118.3356],
-    //     title: 'Location 2',
-    //     subtitle: '',
-    //     image: '/map/2.png'
-    // },
-    // {
-    //     position: [34.0211, -118.3965],
-    //     title: 'Location 1',
-    //     subtitle: '',
-    //     image: '/map/3.png'
-    // },
+
 ]
 
 const customIcon = new Icon({

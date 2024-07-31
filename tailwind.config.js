@@ -24,7 +24,9 @@ module.exports = {
       white:'#fff',
       green:{DEFAULT:'#539592',hover:'#40807d'},
       black:{DEFAULT:'#273029',heavy:'#1b211c'},
+      brown:{DEFAULT:'#b38559',heavy:'#a37248'},
       grey: ' #888888',
+      papayawhip: ' #fdf5e6',
       orange:{
         DEFAULT: '#f2994a',
         hover:'#da863c',
@@ -41,7 +43,7 @@ module.exports = {
         hero: 'url(/hero/bg.png)',
         menu: 'url(/menu/bg.png)',
         reservation: 'url(/reservation/bg.png)',
-        footer: 'url(/footer/bg.png)',
+        footer: 'url(/footer/133.jpg)',
       },
       boxShadow:{
         primary:'40px 4px 40px 0px rgba(68,68,68,0.25)'

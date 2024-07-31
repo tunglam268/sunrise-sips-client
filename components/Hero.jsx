@@ -4,6 +4,7 @@ import Image from 'next/image'
 import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'
 import {Button} from './ui/button'
+import {Link as ScrollLink} from "react-scroll";
 
 const Hero = () => {
     return (
@@ -21,7 +22,7 @@ const Hero = () => {
                                 whileInView={`show`}
                                 viewport={{once: false, amount: 0.4}}
                                 className={`text-white mb-7`}>
-                                A taste of local <br/> flavours
+                                Welcome to Sunrise sips <br/> Restaurant
                             </motion.h1>
                             <motion.p
                                 variants={fadeIn('down', 0.6)}
@@ -29,9 +30,13 @@ const Hero = () => {
                                 whileInView={`show`}
                                 viewport={{once: false, amount: 0.4}}
                                 className={`text-white mb-12 max-w-lg mx-auto xl:max-w-none xl:mx-0`}>
-                                Posuere amet, sed vitae condimentum accumsan aliquam et, aliquam. Tellus in fusce vel
-                                gravida lobortis diam dis ut. Bibendum senectus urna, in ultricies sed lorem natoque.
-                                Risus pharetra
+                                From the radiant warmth that blankets Australia’s capital city. Canberra, renowned for
+                                its abundance of sunshine, serves as the perfect backdrop for our indie coffee shop.
+                                That is why we chose the name
+                                “Sunrise Sips”. Whether you’re seeking a quick caffeine fix on your morning commute or a
+                                leisurely moment to savor the
+                                essence of Canberra’s lively culture, Sunrise Sips is here to fuel your day with passion
+                                and purpose, one sip at a time.
                             </motion.p>
                             <motion.div
                                 variants={fadeIn('down', 0.8)}
@@ -39,7 +44,9 @@ const Hero = () => {
                                 whileInView={`show`}
                                 viewport={{once: false, amount: 0.4}}
                             >
-                                <Button>Let's eat</Button>
+                                <ScrollLink to={'reservation'} smooth={true}>
+                                    <Button className={'ml-60'} variant={'orange'} size={'sm'}>Book a table</Button>
+                                </ScrollLink>
                             </motion.div>
                         </div>
                     </div>
