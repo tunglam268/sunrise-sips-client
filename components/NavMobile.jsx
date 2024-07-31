@@ -38,6 +38,11 @@ const links = [
 
 const NavMobile = ({containerStyles, iconStyles, linkStyles}) => {
     const [isOpen, setIsOpen] = useState(false)
+
+    const closeNav = () => {
+        setIsOpen(false);
+    };
+
     return <div className={`${containerStyles}`}>
         {/*nav trigger btn*/}
         <div onClick={() => setIsOpen(!isOpen)} className={`cursor-pointer outline-none`}>
@@ -62,6 +67,7 @@ const NavMobile = ({containerStyles, iconStyles, linkStyles}) => {
                         return <ScrollLink
                             key={index}
                             to={link.path}
+                            onClick={closeNav}
                             offset={link.offset}
                             className={'flex items-center gap-x-3'}>
                             <div className={`${iconStyles}`}>{link.icon}</div>
@@ -71,7 +77,7 @@ const NavMobile = ({containerStyles, iconStyles, linkStyles}) => {
                 </div>
                 {/*btn*/}
                 <ScrollLink to='reservation' smooth offset={-150}>
-                    <Button variant={'orange'}>Book a table</Button>
+                    <Button variant={'orange'} onClick={closeNav}>Book a table</Button>
                 </ScrollLink>
             </div>
         </aside>

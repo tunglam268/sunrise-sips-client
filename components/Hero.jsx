@@ -65,7 +65,6 @@ const Hero = () => {
                 whileInView={`show`}
                 viewport={{once: false, amount: 0.1}}
                 className={`hidden xl:flex xl:relative xl:-top-36`}>
-                <Image src={`/hero/coffee.png`} alt={``} width={386} height={404}/>
             </motion.div>
         </section>
     )
