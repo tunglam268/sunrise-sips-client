@@ -1,26 +1,37 @@
 "use client";
-import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import {FaFacebookSquare, FaMapMarkerAlt, FaPhoneAlt} from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
+import {FaSquareInstagram} from "react-icons/fa6";
 
 const Footer = () => {
   return (
     <footer className={`bg-brown-heavy bg-cover bg-no-repeat text-white md:p-8 xl:p-0`} id="contact">
-      <div className={`container mx-auto flex justify-between flex-wrap pt-10`}>
+      <div className={`container mx-auto flex justify-between flex-wrap pt-10 gap-8`}>
         <div className="w-80">
           <h2 className="pb-5">Contact Us</h2>
-          <div className={`contact-us flex flex-col gap-3`}>
+          <div className={`contact-us flex flex-col gap-6`}>
             <div className="flex gap-3">
-              <FaMapMarkerAlt size={22} />
+              <FaMapMarkerAlt size={22}/>
               <span className="text-white">52 Willoughby Rd Crows Nest, NSW, Australia 2065</span>
             </div>
             <div className="flex gap-3">
-              <FaPhoneAlt size={22} />
+              <FaPhoneAlt size={22}/>
               <span className="text-white">(02) 9460 8937</span>
             </div>
             <div className="flex gap-3">
-              <IoMail size={22} />
-              <a href="mailto:info@chillrestaurant.com.au" className="text-white">
+              <IoMail size={22}/>
+              <a href="mailto:info@sunrisesips.com.au" className="text-white">
                 info@chillrestaurant.com.au
+              </a>
+            </div>
+            <div className="flex gap-3">
+              <a href="https://www.facebook.com/" target="_blank"
+                 rel="noopener noreferrer" className="text-white">
+                <FaFacebookSquare size={32}/>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank"
+                 rel="noopener noreferrer" className="text-white">
+                <FaSquareInstagram size={32}/>
               </a>
             </div>
           </div>
@@ -29,13 +40,10 @@ const Footer = () => {
           <h2 className="pb-5">Opening Hours</h2>
           <div className="divide-y flex flex-col gap-4">
             <div className={`opening-hours flex flex-col gap-3`}>
-              <span className="text-white">Sun - Thur 11am - 9:00pm</span>
-              <span className="text-white">Fri - Sat 11am - 9:30pm</span>
+            <span className="text-white">Open time : 11:00am - 9:30pm</span>
+              <span className="text-white">Every day in week</span>
             </div>
             <div className={`flex flex-col gap-3 pt-4`}>
-              <span className="text-white">Fully licensed</span>
-              <span className="text-white">BYO available on Tuesday with $15 per bottle corkage fee</span>
-              <span className="text-white">Cakeage fee of $3 pp applied</span>
             </div>
           </div>
         </div>

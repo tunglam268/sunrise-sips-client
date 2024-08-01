@@ -21,7 +21,7 @@ const Hero = () => {
                 viewport={{ once: false, amount: 0.4 }}
                 className={`text-brown mb-7`}
               >
-                Welcome to Sunrise sips <br /> Restaurant
+                Welcome to Sunrise Sips <br /> Restaurant
               </motion.h1>
               <motion.p
                 variants={fadeIn("down", 0.6)}
