@@ -31,7 +31,8 @@ const Header = () => {
             <div className={`flex items-center justify-between`}>
                 {/*logo*/}
                 <Link href={'/'}>
-                    <Image src={`${active ? '/logo-negative.svg' : '/logo-positive.svg'}`} width={120} height={50}
+                    <Image src={`${active ? '/logo-negative.svg' : '/logo-positive.svg'}`} width={active ? 100 : 120}
+                           height={50}
                            alt={''}/>
                 </Link>
                 {/*nav*/}

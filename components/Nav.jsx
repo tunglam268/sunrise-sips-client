@@ -4,27 +4,27 @@ import { Link } from 'react-scroll';
 const links = [
     {
         path: "home",
-        name: "HOME",
+        name: "Home",
         offset: -50
     },
     {
         path: "menu",
-        name: "MENU",
+        name: "Menu",
         offset: -50
     },
     {
         path: "about",
-        name: "ABOUT",
+        name: "About",
         offset: -150
     },
     {
         path: "contact",
-        name: "CONTACT",
+        name: "Contact",
         offset: 0
     },
     {
         path: "https://bopple.app/",
-        name: "ONLINE ORDER",
+        name: "Online Order",
         offset: 0,
         external: true
     },
