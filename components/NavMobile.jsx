@@ -1,9 +1,10 @@
 'use client'
 import React, {useState} from "react";
 import {RiMenu2Line, RiHomeFill} from "react-icons/ri";
-import {IoCloseOutline} from "react-icons/io5";
-import {BiSolidFoodMenu} from "react-icons/bi";
-import {FaUserSlash, FaEnvelope, FaUsers} from "react-icons/fa";
+import {IoCloseOutline, IoHomeOutline, IoFastFoodOutline} from "react-icons/io5";
+import {FaRegAddressBook} from "react-icons/fa6";
+import {BsPeople} from "react-icons/bs";
+import {HiOutlineShoppingCart} from "react-icons/hi";
 import {Link as ScrollLink} from 'react-scroll'
 import Images from 'next/image'
 import Link from 'next/link'
@@ -11,27 +12,34 @@ import {Button} from './ui/button'
 
 const links = [
     {
-        icon: <RiHomeFill/>,
+        icon: <IoHomeOutline/>,
         path: "home",
         name: "home",
         offset: 0
     },
     {
-        icon: <BiSolidFoodMenu/>,
+        icon: <IoFastFoodOutline/>,
         path: "menu",
         name: "menu",
         offset: 0
     },
     {
-        icon: <FaUsers/>,
+        icon: <BsPeople/>,
         path: "about",
         name: "about",
         offset: -50
     },
     {
-        icon: <RiHomeFill/>,
+        icon: <FaRegAddressBook/>,
         path: "contact",
         name: "contact",
+        offset: 0
+    },
+    {
+        icon: <HiOutlineShoppingCart/>,
+        path: "https://bopple.app/",
+        name: "order online",
+        external: true,
         offset: 0
     }
 ]
@@ -59,20 +67,38 @@ const NavMobile = ({containerStyles, iconStyles, linkStyles}) => {
                 </div>
                 {/*logo*/}
                 <Link href={'/'}>
-                    <Images src={'/logo-negative.svg'} width={90} height={36} alt={''}/>
+                    <Images src={'/logo-negative.svg'} width={150} height={36} alt={''}/>
                 </Link>
                 {/*links*/}
                 <div className={`flex flex-col gap-y-8`}>
                     {links.map((link, index) => {
-                        return <ScrollLink
-                            key={index}
-                            to={link.path}
-                            onClick={closeNav}
-                            offset={link.offset}
-                            className={'flex items-center gap-x-3'}>
-                            <div className={`${iconStyles}`}>{link.icon}</div>
-                            <div className={`${linkStyles}`}>{link.name}</div>
-                        </ScrollLink>
+                        if (link.external) {
+                            return (
+                                <a
+                                    key={index}
+                                    href={link.path}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={'flex items-center gap-x-3'}
+                                >
+                                    <div className={`${iconStyles}`}>{link.icon}</div>
+                                    <div className={`${linkStyles}`}>{link.name}</div>
+                                </a>
+                            );
+                        } else {
+                            return (
+                                <ScrollLink
+                                    key={index}
+                                    to={link.path}
+                                    onClick={closeNav}
+                                    offset={link.offset}
+                                    className={'flex items-center gap-x-3'}
+                                >
+                                    <div className={`${iconStyles}`}>{link.icon}</div>
+                                    <div className={`${linkStyles}`}>{link.name}</div>
+                                </ScrollLink>
+                            );
+                        }
                     })}
                 </div>
                 {/*btn*/}

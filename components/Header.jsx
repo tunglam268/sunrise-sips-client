@@ -31,7 +31,7 @@ const Header = () => {
             <div className={`flex items-center justify-between`}>
                 {/*logo*/}
                 <Link href={'/'}>
-                    <Image src={`${active ? '/logo-negative.svg' : '/logo-positive.svg'}`} width={120} height={30}
+                    <Image src={`${active ? '/logo-negative.svg' : '/logo-positive.svg'}`} width={120} height={50}
                            alt={''}/>
                 </Link>
                 {/*nav*/}
@@ -39,7 +39,7 @@ const Header = () => {
                      linkStyles={`capitalize ${active ? 'text-white' : 'text-black'}`}/>
                 {/*btn*/}
                 <ScrollLink to={'reservation'} smooth={true}>
-                    <Button variant={''} size={'sm'}>Book a table</Button>
+                    <Button className={"hidden xl:block"} variant={''} size={'sm'}>Book a table</Button>
                 </ScrollLink>
                 {/*mobile nav*/}
                 <NavMobile containerStyles={'xl:hidden'} iconStyles={'text-3xl'} linkStyles={`uppercase`}/>

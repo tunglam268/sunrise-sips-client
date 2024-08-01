@@ -14,7 +14,7 @@ const Hero = () => {
                 <div className={`flex items-center xl:h-[960px]`}>
                     <div>
                         {/*text*/}
-                        <div className={`w-full xl:max-w-[460px] text-center xl:text-left`}>
+                        <div className={`w-full xl:max-w-[460px] text-center xl:text-left mt-20`}>
                             <motion.h1
                                 variants={fadeIn('down', 0.2)}
                                 initial={`hidden`}
