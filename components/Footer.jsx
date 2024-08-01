@@ -4,8 +4,8 @@ import { IoMail } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className={`bg-brown-heavy bg-cover bg-no-repeat text-white pt-16 md:p-8 xl:p-0`}>
-      <div className={`container mx-auto flex justify-between flex-wrap`}>
+    <footer className={`bg-brown-heavy bg-cover bg-no-repeat text-white md:p-8 xl:p-0`} id="contact">
+      <div className={`container mx-auto flex justify-between flex-wrap pt-10`}>
         <div className="w-80">
           <h2 className="pb-5">Contact Us</h2>
           <div className={`contact-us flex flex-col gap-3`}>
