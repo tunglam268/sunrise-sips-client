@@ -15,7 +15,7 @@ const About = () => {
             whileInView={`show`}
             viewport={{once: false, amount: 0.2}}
             className={`xl:pl-[135px]`}>
-            <h1 className={'mb-9'}>Let's Talk About Sunrise Sips</h1>
+            <h1 className={'mb-9 text-brown-heavy'}>Let's Talk About Sunrise Sips</h1>
             <p className={'mb-8'}>
                 Sunrise Sips is where every morning begins with warmth and a burst of flavour and in the heart of Canberra. Nestled
                 in the vibrant cityscape, our coffee shop is a haven for coffee enthusiasts but also acts as a family friendly space for parents

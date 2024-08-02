@@ -43,7 +43,7 @@ const Nav = ({ containerStyles, linkStyles }) => {
                             rel="noopener noreferrer"
                             className={`${linkStyles}`}
                         >
-                            {link.name}
+                            <h3>{link.name}</h3>
                         </a>
                     );
                 } else {
@@ -57,7 +57,7 @@ const Nav = ({ containerStyles, linkStyles }) => {
                             duration={500}
                             className={`${linkStyles}`}
                         >
-                            {link.name}
+                            <h3>{link.name}</h3>
                         </Link>
                     );
                 }

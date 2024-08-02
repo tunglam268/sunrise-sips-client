@@ -1,6 +1,7 @@
 'use client'
 import React, {useState} from "react";
 import {RiMenu2Line, RiHomeFill} from "react-icons/ri";
+import {AiOutlineMenuFold, AiOutlineMenuUnfold} from "react-icons/ai";
 import {IoCloseOutline, IoHomeOutline, IoFastFoodOutline} from "react-icons/io5";
 import {FaRegAddressBook} from "react-icons/fa6";
 import {BsPeople} from "react-icons/bs";
@@ -54,7 +55,7 @@ const NavMobile = ({containerStyles, iconStyles, linkStyles}) => {
     return <div className={`${containerStyles}`}>
         {/*nav trigger btn*/}
         <div onClick={() => setIsOpen(!isOpen)} className={`cursor-pointer outline-none`}>
-            <RiMenu2Line className={'text-3xl text-white transition-all duration-200'}/>
+                <AiOutlineMenuFold className={'text-3xl text-white transition-all duration-200'}/>
         </div>
         <aside
             className={`${isOpen ? 'right-0' : '-right-full'} bg-black fixed z-20 w-full p-10 top-0 bottom-0 transition-all duration-500`}>
