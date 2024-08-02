@@ -18,7 +18,7 @@ export default function Home() {
       <Reservation />
       <About />
       <Footer />
-      <div className="fixed z-10 top-[50%] left-[5%] gap-4 flex flex-col">
+      <div className="fixed z-10 top-[50%] left-[5%] gap-4 flex-col hidden md:flex">
         <FaFacebookSquare size={32} />
         <FaSquareInstagram size={32} />
       </div>
