@@ -22,12 +22,6 @@ const About = () => {
                 with children. As the first rays of dawn paint the sky with hues of gold, we invite you to embark on a journey, awakening your
                 senses with the rich aroma of freshly brewed coffee and the tantalizing taste of our Arabica beans.
             </p>
-            {/*<p className={'mb-10'}>*/}
-            {/*    posuere ultrices facilisi. Senectus velit lobortis velit arcu varius lectus mattis. Dictum aenean duis*/}
-            {/*    aliquet Tortor purus egestas urna scelerisque vel ornare lectus ultricies. Nisi, eu ut ultricies enim*/}
-            {/*    enim amet porttitor. Volutpat ac tellus volutpat eget volutpat orci enim, ut a. Turpis adipiscing*/}
-            {/*    eleifend dignissim viverra euismod ultrices.*/}
-            {/*</p>*/}
             <Button variant={'orange'} >Read more</Button>
         </motion.div>
         {/*img*/}
