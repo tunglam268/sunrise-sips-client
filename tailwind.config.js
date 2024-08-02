@@ -24,8 +24,10 @@ module.exports = {
       white:'#fff',
       blue:{DEFAULT:'#539592',hover:'#40807d'},
       black:{DEFAULT:'#273029',heavy:'#1b211c'},
-      brown:{DEFAULT:'#b38559',heavy:'#a37248'},
+      brown:{DEFAULT:'#b38559',heavy:'#69482e'},
       grey: ' #888888',
+      purple: '#7a3672',
+      red: '#cf1922',
       papayawhip: ' #fdf5e6',
       orange:{
         DEFAULT: '#f2994a',
