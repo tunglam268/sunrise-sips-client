@@ -1,7 +1,8 @@
 "use client";
-import { FaFacebookSquare, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+
+import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { FaSquareInstagram } from "react-icons/fa6";
+import {FaFacebookF} from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -26,10 +27,13 @@ const Footer = () => {
             </div>
             <div className="flex gap-3">
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white">
-                <FaFacebookSquare size={32} />
+                <FaFacebookF size={32} className="text-blue-facebook"/>
               </a>
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-white">
-                <FaSquareInstagram size={32} />
+                <div className="outer">
+                  <div className="inner">
+                  </div>
+                </div>
               </a>
             </div>
           </div>

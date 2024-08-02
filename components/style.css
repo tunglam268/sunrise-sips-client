@@ -1,0 +1,53 @@
+@media (max-width: 1400px) {
+    .social-icons {
+        display: none;
+    }
+}
+/* Basic */
+.outer {
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(
+            circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285aeb 90%
+    );
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+}
+/* innerside in outer box */
+.inner {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+/* center circle of logo */
+.inner::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+}
+/* top right circle of logo */
+.inner::after {
+    content: "";
+    width: 2px;
+    height: 2px;
+    border: 0.5px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 1.5px;
+    right: 2px;
+}
