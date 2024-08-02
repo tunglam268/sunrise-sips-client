@@ -1,5 +1,6 @@
 import {Lora, Poppins ,} from "next/font/google";
 import "./globals.css";
+import {SpeedInsights} from "@vercel/speed-insights/next";
 
 //Font chữ
 const lora = Lora({subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-lora'})
@@ -17,8 +18,9 @@ export const metadata = {
 export default function RootLayout({children}) {
     return (
         <html lang="en">
-        <body className={`${lora.variable} ${poppins.variable}`}>{children}</body>
+        <body className={`${lora.variable} ${poppins.variable}`}>{children}
         <SpeedInsights />
+        </body>
         </html>
     );
 }
