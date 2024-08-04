@@ -26,10 +26,10 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex gap-3">
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white" aria-label="Facebook">
                 <FaFacebookF size={32} className="text-blue-facebook"/>
               </a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-white">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-white" aria-label="Instagram">
                 <div className="outer">
                   <div className="inner">
                   </div>
@@ -59,6 +59,7 @@ const Footer = () => {
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              title={"map"}
             ></iframe>
           </div>
         </div>
