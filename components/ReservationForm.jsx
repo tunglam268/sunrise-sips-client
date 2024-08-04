@@ -64,7 +64,7 @@ const ReservationForm = () => {
                     <div>
                         <Label>Person</Label>
                         <Select>
-                            <SelectTrigger className="w-full">
+                            <SelectTrigger className="w-full" aria-label="Select number of people">
                                 <SelectValue placeholder="How many people do you have?"/>
                             </SelectTrigger>
 

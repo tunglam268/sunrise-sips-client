@@ -32,8 +32,7 @@ const Header = () => {
                 {/*logo*/}
                 <Link href={'/'}>
                     <Image src={`${active ? '/logo-negative.svg' : '/logo-positive.svg'}`} width={active ? 100 : 200}
-                           height={50}
-                           alt={''}/>
+                           height={50}/>
                 </Link>
                 {/*nav*/}
                 <Nav containerStyles={`hidden xl:flex gap-x-12`}
