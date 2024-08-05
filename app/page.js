@@ -3,7 +3,7 @@ import { FaFacebookF } from "react-icons/fa6";
 import '../components/style.css';
 
 const Header = dynamic(() => import("../components/Header"), {});
-const Hero = dynamic(() => import("../components/Hero"), {});
+const Hero = dynamic(() => import("../components/Hero"), {ssr:false});
 const Menu = dynamic(() => import("../components/Menu"), { ssr: false });
 const Reservation = dynamic(() => import("../components/Reservation"), { ssr: false });
 const About = dynamic(() => import("../components/About"), { ssr: false });
