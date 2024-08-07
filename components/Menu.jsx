@@ -36,7 +36,7 @@ const Menu = () => {
           variants={fadeIn("left", 0.2)}
           initial={"hidden"}
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className={`max-w-[570px] mx-auto text-center xl:text-right`}
         >
           <h2 className={`mb-3`}>Favorite Menu</h2>
@@ -50,7 +50,7 @@ const Menu = () => {
           variants={fadeIn("up", 0.3)}
           initial={"hidden"}
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className={"grid grid-cols-1 gap-x-30 md:grid-cols-3 md:gap-[15px] xl:grid-cols-4"}
         >
           {menu.map((item, index) => {

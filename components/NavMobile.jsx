@@ -55,7 +55,7 @@ const NavMobile = ({containerStyles, iconStyles, linkStyles}) => {
     return <div className={`${containerStyles}`}>
         {/*nav trigger btn*/}
         <div onClick={() => setIsOpen(!isOpen)} className={`cursor-pointer outline-none`}>
-                <AiOutlineMenuFold className={'text-3xl text-white transition-all duration-200'}/>
+                <AiOutlineMenuFold className={'text-3xl text-brown-heavy transition-all duration-200'}/>
         </div>
         <aside
             className={`${isOpen ? 'right-0' : '-right-full'} bg-black fixed z-20 w-full p-10 top-0 bottom-0 transition-all duration-500`}>

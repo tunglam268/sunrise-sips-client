@@ -13,7 +13,7 @@ const About = () => {
             variants={fadeIn('right', 0.2)}
             initial={`hidden`}
             whileInView={`show`}
-            viewport={{once: false, amount: 0.2}}
+            viewport={{once: true, amount: 0.2}}
             className={`xl:pl-[135px]`}>
             <h1 className={'mb-9 text-brown-heavy'}>Let's Talk About Sunrise Sips</h1>
             <p className={'mb-8'}>
@@ -29,7 +29,7 @@ const About = () => {
             variants={fadeIn('left', 0.2)}
             initial={`hidden`}
             whileInView={`show`}
-            viewport={{once: false, amount: 0.2}}>
+            viewport={{once: true, amount: 0.2}}>
             <Image src={'/about/img.png'} width={705} height={771} alt={''} className={'hidden xl:flex'}/>
         </motion.div>
     </section>;

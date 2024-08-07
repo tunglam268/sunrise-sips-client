@@ -18,7 +18,7 @@ const Hero = () => {
                 variants={fadeIn("down", 0.2)}
                 initial={`hidden`}
                 whileInView={`show`}
-                viewport={{ once: false, amount: 0.4 }}
+                viewport={{ once: true, amount: 0.4 }}
                 className={`text-brown-heavy mb-2`}
               >
                 Welcome to Sunrise Sips <br /> Restaurant
@@ -27,7 +27,7 @@ const Hero = () => {
                 variants={fadeIn("down", 0.6)}
                 initial={`hidden`}
                 whileInView={`show`}
-                viewport={{ once: false, amount: 0.4 }}
+                viewport={{ once: true, amount: 0.4 }}
                 className={`text-black mb-12 max-w-lg mx-auto xl:max-w-none xl:mx-0`}
               >
                 From the radiant warmth that blankets Australia’s capital city. Canberra, renowned for its abundance of
@@ -40,7 +40,7 @@ const Hero = () => {
                 variants={fadeIn("down", 0.8)}
                 initial={`hidden`}
                 whileInView={`show`}
-                viewport={{ once: false, amount: 0.4 }}
+                viewport={{ once: true, amount: 0.4 }}
               >
                 <Button variant={"orange"}>Let's eat</Button>
               </motion.div>
@@ -50,7 +50,7 @@ const Hero = () => {
             variants={fadeIn("up", 0.2)}
             initial={`hidden`}
             whileInView={`show`}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             className={`hidden xl:flex xl:absolute xl:top-[200px] xl:right-0`}
           >
             {/*image*/}
@@ -63,7 +63,7 @@ const Hero = () => {
         variants={fadeIn("up", 0.8)}
         initial={`hidden`}
         whileInView={`show`}
-        viewport={{ once: false, amount: 0.1 }}
+        viewport={{ once: true, amount: 0.1 }}
         className={`hidden xl:flex xl:relative xl:-top-36`}
       ></motion.div>
     </section>
