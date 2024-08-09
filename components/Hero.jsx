@@ -24,7 +24,7 @@ const Hero = () => {
                 Welcome to Sunrise Sips <br /> Restaurant
               </motion.h2>
               <motion.p
-                variants={fadeIn("down", 0.6)}
+                variants={fadeIn("down", 0.3)}
                 initial={`hidden`}
                 whileInView={`show`}
                 viewport={{ once: true, amount: 0.4 }}
@@ -37,7 +37,7 @@ const Hero = () => {
                 passion and purpose, one sip at a time.
               </motion.p>
               <motion.div
-                variants={fadeIn("down", 0.8)}
+                variants={fadeIn("down", 0.4)}
                 initial={`hidden`}
                 whileInView={`show`}
                 viewport={{ once: true, amount: 0.4 }}
@@ -58,14 +58,14 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-      {/*coffee imgage*/}
-      <motion.div
-        variants={fadeIn("up", 0.8)}
-        initial={`hidden`}
-        whileInView={`show`}
-        viewport={{ once: true, amount: 0.1 }}
-        className={`hidden xl:flex xl:relative xl:-top-36`}
-      ></motion.div>
+      {/*/!*coffee imgage*!/*/}
+      {/*<motion.div*/}
+      {/*  variants={fadeIn("up", 0.8)}*/}
+      {/*  initial={`hidden`}*/}
+      {/*  whileInView={`show`}*/}
+      {/*  viewport={{ once: true, amount: 0.1 }}*/}
+      {/*  className={`hidden xl:flex xl:relative xl:-top-36`}*/}
+      {/*></motion.div>*/}
     </section>
   );
 };
