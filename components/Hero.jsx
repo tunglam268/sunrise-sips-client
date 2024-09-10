@@ -66,7 +66,7 @@ const Hero = () => {
         viewport={{ once: true, amount: 0.1 }}
         className={`hidden xl:flex xl:relative xl:-top-36 xl:-left-14`}
       >
-        <Image src={`/food/matcha.png`} width={350} height={600} alt="" />
+        <Image src={`/food/matcha.png`} width={450} height={600} alt="" />
       </motion.div>
     </section>
   );
