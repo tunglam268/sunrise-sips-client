@@ -47,7 +47,6 @@ const links = [
 
 const NavMobile = ({containerStyles, iconStyles, linkStyles, isActive}) => {
     const [isOpen, setIsOpen] = useState(false)
-    console.log(isActive)
     const closeNav = () => {
         setIsOpen(false);
     };
