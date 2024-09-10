@@ -54,18 +54,20 @@ const Hero = () => {
             className={`hidden xl:flex xl:absolute xl:top xl:right-[100px]`}
           >
             {/*image*/}
-            <Image src={`/acai.png`} width={650} height={600} alt="" />
+            <Image src={`/food/acai.png`} width={650} height={600} alt="" />
           </motion.div>
         </div>
       </div>
       {/*/!*coffee imgage*!/*/}
-      {/*<motion.div*/}
-      {/*  variants={fadeIn("up", 0.8)}*/}
-      {/*  initial={`hidden`}*/}
-      {/*  whileInView={`show`}*/}
-      {/*  viewport={{ once: true, amount: 0.1 }}*/}
-      {/*  className={`hidden xl:flex xl:relative xl:-top-36`}*/}
-      {/*></motion.div>*/}
+      <motion.div
+        variants={fadeIn("up", 0.8)}
+        initial={`hidden`}
+        whileInView={`show`}
+        viewport={{ once: true, amount: 0.1 }}
+        className={`hidden xl:flex xl:relative xl:-top-36 xl:-left-14`}
+      >
+        <Image src={`/food/matcha.png`} width={350} height={600} alt="" />
+      </motion.div>
     </section>
   );
 };
