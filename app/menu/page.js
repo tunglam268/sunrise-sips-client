@@ -264,6 +264,29 @@ const mockCoffee = [
   },
 ];
 
+const mockCoffee2 = [
+  {
+    name: "Extra Shot",
+    reg: null,
+    lrg: "+70¢",
+  },
+  {
+    name: "Extra Flavour | Decaf",
+    reg: null,
+    lrg: "+70¢",
+  },
+  {
+    name: "Alternative Milk",
+    reg: null,
+    lrg: "+1$",
+  },
+  {
+    name: "ICED LATTE (12OZ)",
+    reg: null,
+    lrg: 6.5,
+  },
+];
+
 const imagesVegan = [
   {
     src: "/menu/chicken-karaage-burger.png",
@@ -276,6 +299,17 @@ const imagesVegan = [
   {
     src: "/menu/soba-noodles.png",
     alt: "soba-noodles",
+  },
+];
+
+const imagesCoffee = [
+  {
+    src: "/menu/chicken-karaage-burger.png",
+    alt: "chicken-karaage-burger",
+  },
+  {
+    src: "/menu/chilli-prawn-croissant.png",
+    alt: "chilli-prawn-croissant",
   },
 ];
 
@@ -307,18 +341,33 @@ const MenuItem = ({ source = [], isOption = true }) => {
 };
 
 const ImageList = ({ data }) => {
-  return data?.map?.((image, index) => {
-    return (
-      <div key={index}>
-        <Image src={image.src} width={300} height={300} alt={image.alt} className="object-cover w-full h-full" />
+  return (
+    <div className="flex gap-4">
+      <div className="w-1/2 h-[150px]">
+        <Image
+          src={imagesCoffee[0].src}
+          width={150}
+          height={50}
+          alt={imagesCoffee[0].alt}
+          className="object-cover w-full h-full"
+        />
       </div>
-    );
-  });
+      <div className="w-1/2 h-[150px]">
+        <Image
+          src={imagesCoffee[1].src}
+          width={150}
+          height={50}
+          alt={imagesCoffee[1].alt}
+          className="object-cover w-full h-full"
+        />
+      </div>
+    </div>
+  );
 };
 
 const ImageGrid = () => {
   return (
-    <div className="flex">
+    <div className="flex h-[300px] ml-4">
       {/* Cột 1: Hình 1 */}
       <div className="w-1/2">
         <Image
@@ -326,28 +375,28 @@ const ImageGrid = () => {
           width={150}
           height={100}
           alt={imagesVegan[0].alt}
-          className="object-cover w-full h-full"
+          className="object-center w-full h-full"
         />
       </div>
 
       {/* Cột 2: 2 Hình chồng nhau */}
-      <div className="w-1/2 flex flex-col">
-        <div className="flex-1">
+      <div className="w-1/2 flex flex-col h-[300px]">
+        <div className="flex-1 h-[150px]">
           <Image
             src={imagesVegan[1].src}
             width={150}
             height={50}
             alt={imagesVegan[1].alt}
-            className="object-cover w-full h-full"
+            className="object-center w-full h-full"
           />
         </div>
-        <div className="flex-1">
+        <div className="flex-1 h-[150px]">
           <Image
             src={imagesVegan[2].src}
             width={150}
             height={50}
             alt={imagesVegan[2].alt}
-            className="object-cover w-full h-full"
+            className="object-center w-full h-full"
           />
         </div>
       </div>
@@ -417,6 +466,7 @@ function Menu() {
                 </div>
               </div>
               <div className="flex flex-col gap-4">
+                <ImageGrid />
                 <div className="flex flex-col gap-2">
                   <div className="px-4 font-bold underline underline-offset-4">KIDS MENU</div>
                   <MenuItem
@@ -456,15 +506,18 @@ function Menu() {
           </div>
         )}
         {hrefSelected === CATEGORIES.DRINKS && (
-          <div className="flex gap-10 h-[100%] my-28">
-            <div className="w-1/2">
-              <div className="font-bold text-2xl pb-3">SMOOTHIE, ACAI & MORE</div>
+          <div className="flex flex-wrap sm:flex-nowrap gap-3 sm:gap-10 h-[100%] my-6">
+            <div className="w-[100%] sm:w-1/2 px-3">
+              <div className="pb-3">
+                <ImageList data={imagesCoffee} />
+              </div>
+              <div className="font-bold md:text-2xl pb-3 text-xl">SMOOTHIE, ACAI & MORE</div>
               <div className="gap-8">
-                <div className="border p-5 flex gap-16">
+                <div className="border p-2 sm:p-5 flex gap-16">
                   <div class="grid grid-cols-2 gap-4 divide-x">
                     <div className="left flex flex-col gap-4">
                       <div className="smoothie">
-                        <div className="underline underline-offset-8 decoration-dashed font-semibold ml-4 pb-4">
+                        <div className="underline underline-offset-8 decoration-dashed font-semibold ml-4 pb-4 text-sm md:text-base">
                           SMOOTHIE
                         </div>
                         <div className="flex flex-col gap-4">
@@ -472,7 +525,7 @@ function Menu() {
                         </div>
                       </div>
                       <div className="milkshake">
-                        <div className="underline underline-offset-8 decoration-dashed font-semibold ml-4 pb-4">
+                        <div className="underline underline-offset-8 decoration-dashed font-semibold ml-4 pb-4 text-sm md:text-base">
                           MILKSHAKE
                         </div>
                         <div className="flex flex-col gap-4">
@@ -482,7 +535,7 @@ function Menu() {
                     </div>
                     <div className="right flex flex-col gap-4">
                       <div className="acaibowl">
-                        <div className="underline underline-offset-8 decoration-dashed font-semibold ml-4 pb-4">
+                        <div className="underline underline-offset-8 decoration-dashed font-semibold ml-4 pb-4 text-sm md:text-base">
                           ACAI BOWL ($15)
                         </div>
                         <div className="flex flex-col gap-4">
@@ -498,7 +551,7 @@ function Menu() {
                         </div>
                       </div>
                       <div className="juice">
-                        <div className="underline underline-offset-8 decoration-dashed font-semibold ml-4 pb-4">
+                        <div className="underline underline-offset-8 decoration-dashed font-semibold ml-4 pb-4 text-sm md:text-base">
                           ACAI BOWL ($15)
                         </div>
                         <div className="flex flex-col gap-4">
@@ -510,51 +563,75 @@ function Menu() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2">
-              <div className="font-bold text-2xl text-right pb-3">COFFEE, TEA & MATCHA</div>
-              <div className="gap-8">
-                <div className="border p-5 flex gap-16 justify-center">
-                  <div class="grid grid-cols-2 gap-4 divide-x">
-                    <div className="left flex flex-col gap-4">
-                      <div className="coffee">
-                        <div className="grid grid-cols-6 gap-4">
-                          <div className="col-span-4 underline underline-offset-8 decoration-dashed font-semibold pb-4">
-                            COFFEE
-                          </div>
-                          <div className="col-start-5 row-start-1 font-semibold">REG</div>
-                          <div className="col-start-6 row-start-1 font-semibold">LRG</div>
-                        </div>
-                        <div className="flex flex-col gap-4">
-                          {mockCoffee?.map((c) => (
-                            <div className="grid grid-cols-6 gap-4">
-                              <div className="col-span-4 font-medium">{c.name}</div>
-                              <div className="col-start-5 row-start-1 text-center font-medium">{c.reg}</div>
-                              <div className="col-start-6 row-start-1 text-center font-medium">{c.lrg}</div>
+            <div className="flex flex-col justify-between w-[100%] sm:w-1/2 px-3">
+              <div>
+                <div className="font-bold md:text-2xl pb-3 text-xl text-right">COFFEE, TEA & MATCHA</div>
+                <div className="gap-8">
+                  <div className="border p-2 sm:p-5 flex gap-16 justify-center">
+                    <div class="grid grid-cols-2 gap-4 divide-x">
+                      <div className="left flex flex-col gap-4">
+                        <div className="coffee">
+                          <div className="grid grid-cols-6 gap-4">
+                            <div className="col-span-4 underline underline-offset-8 decoration-dashed font-semibold pb-4 text-sm md:text-base">
+                              COFFEE
                             </div>
-                          ))}
+                            <div className="col-start-5 row-start-1 font-semibold text-xs md:text-sm">REG</div>
+                            <div className="col-start-6 row-start-1 font-semibold text-xs md:text-sm">LRG</div>
+                          </div>
+                          <div className="flex flex-col gap-4">
+                            {mockCoffee?.map((c) => (
+                              <div className="grid grid-cols-6 gap-4">
+                                <div className="col-span-4 font-medium text-xs md:text-sm">{c.name}</div>
+                                <div className="col-start-5 row-start-1 text-center font-medium text-xs md:text-sm">
+                                  {c.reg}
+                                </div>
+                                <div className="col-start-6 row-start-1 text-center font-medium text-xs md:text-sm">
+                                  {c.lrg}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                        <div className="coffee-2">
+                          <div className="flex flex-col gap-4">
+                            {mockCoffee2?.map((c) => (
+                              <div className="grid grid-cols-6 gap-4">
+                                <div className="col-span-4 font-light text-xs md:text-sm">{c.name}</div>
+                                <div className="col-start-5 row-start-1 text-center font-medium text-xs md:text-sm">
+                                  {c.reg}
+                                </div>
+                                <div className="col-start-6 row-start-1 text-center font-light text-xs md:text-sm">
+                                  {c.lrg}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="right flex flex-col gap-4">
-                      <div className="teapot">
-                        <div className="underline underline-offset-8 decoration-dashed font-semibold ml-4 pb-4">
-                          TEA POT ($5)
+                      <div className="right flex flex-col gap-4">
+                        <div className="teapot">
+                          <div className="underline underline-offset-8 decoration-dashed font-semibold ml-4 pb-4 text-sm md:text-base">
+                            TEA POT ($5)
+                          </div>
+                          <div className="flex flex-col gap-4">
+                            <MenuItem source={mockTeapot} />
+                          </div>
                         </div>
-                        <div className="flex flex-col gap-4">
-                          <MenuItem source={mockTeapot} />
-                        </div>
-                      </div>
-                      <div className="teapot">
-                        <div className="underline underline-offset-8 decoration-dashed font-semibold ml-4 pb-4">
-                          MATCHA DRINKS
-                        </div>
-                        <div className="flex flex-col gap-4">
-                          <MenuItem source={mockMatchaDrink} />
+                        <div className="teapot">
+                          <div className="underline underline-offset-8 decoration-dashed font-semibold ml-4 pb-4 text-sm md:text-base">
+                            MATCHA DRINKS
+                          </div>
+                          <div className="flex flex-col gap-4">
+                            <MenuItem source={mockMatchaDrink} />
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="pt-3">
+                <ImageList data={imagesCoffee} />
               </div>
             </div>
           </div>
