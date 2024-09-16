@@ -40,10 +40,10 @@ const Header = () => {
                      linkStyles={`capitalize ${active ? 'text-white' : 'text-brown-heavy'}`}/>
                 {/*btn*/}
                 <ScrollLink to={'reservation'} smooth={true}>
-                    <Button className={"hidden xl:block"} variant={''} size={'sm'}>Book a table</Button>
+                    <Button className={"hidden xl:block text-[16px]"} variant={''} size={'sm'}>Book a table</Button>
                 </ScrollLink>
                 {/*mobile nav*/}
-                <NavMobile containerStyles={'xl:hidden'} iconStyles={'text-3xl'} linkStyles={`uppercase`}/>
+                <NavMobile containerStyles={'xl:hidden'} iconStyles={'text-3xl'} linkStyles={`uppercase`} isActive={active}/>
             </div>
         </div>
     </header>

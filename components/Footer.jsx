@@ -12,21 +12,30 @@ const Footer = () => {
           <h2 className="pb-5">Contact Us</h2>
           <div className={`contact-us flex flex-col gap-6`}>
             <div className="flex gap-3">
-              <FaMapMarkerAlt size={22} />
-              <span className="text-white">52 Willoughby Rd Crows Nest, NSW, Australia 2065</span>
+              <FaMapMarkerAlt size={22}/>
+              <a
+                  href="https://www.google.com/maps/place/Top+Ryde+City+Shopping+Centre/@-33.8122148,151.1055777,18z/data=!3m1!5s0x6b12a5a54c006b6d:0x113b7f3c494b7c7!4m14!1m7!3m6!1s0x6b12a5af8ac4225f:0xb69458817076d25a!2sTop+Ryde+City+Shopping+Centre!8m2!3d-33.8122148!4d151.1062214!16s%2Fm%2F03y5f6v!3m5!1s0x6b12a5af8ac4225f:0xb69458817076d25a!8m2!3d-33.8122148!4d151.1062214!16s%2Fm%2F03y5f6v?hl=en&entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D"
+                  className="text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >
+                GRD-3024a, Top Ryde City Shopping Centre
+              </a>
+
             </div>
             <div className="flex gap-3">
-              <FaPhoneAlt size={22} />
-              <span className="text-white">(02) 9460 8937</span>
+              <FaPhoneAlt size={22}/>
+              <span className="text-white">0416 399 399</span>
             </div>
             <div className="flex gap-3">
-              <IoMail size={22} />
+              <IoMail size={22}/>
               <a href="mailto:info@sunrisesips.com.au" className="text-white">
-                info@chillrestaurant.com.au
+                doublesscoffee@gmail.com
               </a>
             </div>
             <div className="flex gap-3">
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white" aria-label="Facebook">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white"
+                 aria-label="Facebook">
                 <FaFacebookF size={32} className="text-blue-facebook"/>
               </a>
               <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-white" aria-label="Instagram">
@@ -52,7 +61,7 @@ const Footer = () => {
           <h2 className="pb-5">Location</h2>
           <div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14414.329107815951!2d151.2027168405928!3d-33.82639824624899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12aee8267f65ab%3A0xe63a0d691a1fa9c4!2s52%20Willoughby%20Rd%2C%20Crows%20Nest%20NSW%202065%2C%20Australia!5e0!3m2!1sen!2s!4v1722497111601!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1657.501904200022!2d151.10557766965795!3d-33.81221479832804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a5af8ac4225f%3A0xb69458817076d25a!2sTop%20Ryde%20City%20Shopping%20Centre!5e0!3m2!1sen!2sus!4v1725953774719!5m2!1sen!2sus"
               width="326"
               height="216"
               style={{ border: 0 }}
