@@ -40,7 +40,7 @@ const Menu = () => {
           className={`max-w-[570px] mx-auto text-center xl:text-right`}
         >
           <h2 className={`mb-3`}>Favorite Menu</h2>
-          <Link href={"/"} className={"text-blue text-[20px] flex justify-center xl:justify-end items-center mb-16"}>
+          <Link href={"/menu#FOODS"} className={"text-blue flex justify-center xl:justify-end items-center mb-16"}>
             View all
             <IoIosArrowRoundForward className={"text-3xl"} />
           </Link>
