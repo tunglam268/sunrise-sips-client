@@ -1,4 +1,5 @@
 "use client";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -422,6 +423,8 @@ const menuList = [
   },
 ];
 
+const Footer = dynamic(() => import("../../components/Footer"), { ssr: false });
+
 function Menu() {
   const [hrefSelected, setHrefSelected] = useState(CATEGORIES.FOODS);
 
@@ -637,6 +640,7 @@ function Menu() {
           </div>
         )}
       </div>
+      <Footer />
     </main>
   );
 }
