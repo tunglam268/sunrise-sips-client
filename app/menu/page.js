@@ -4,9 +4,9 @@ import Link from "next/link";
 import {useEffect, useState} from "react";
 import {FaArrowLeft} from "react-icons/fa6";
 
-const Footer = dynamic(() => import("../../components/Footer"));
-const Food = dynamic(() => import("../../components/Food"));
-const Drink = dynamic(() => import("../../components/Drink"));
+const Footer = dynamic(() => import("../../components/Footer"),{ssr:true});
+const Food = dynamic(() => import("../../components/Food"),{ssr:true});
+const Drink = dynamic(() => import("../../components/Drink"),{ssr:true});
 
 const CATEGORIES = {
     FOODS: "FOODS",
