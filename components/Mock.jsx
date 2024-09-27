@@ -252,6 +252,11 @@ export const mockCoffee = [
         lrg: 5.5,
     },
     {
+        name: "ICED LATTE (12OZ)",
+        reg: null,
+        lrg: 6.5,
+    },
+    {
         name: "BABYCHINO ",
         reg: 2,
         lrg: null,
@@ -273,11 +278,6 @@ export const mockCoffee2 = [
         name: "Alternative Milk",
         reg: null,
         lrg: "+1$",
-    },
-    {
-        name: "ICED LATTE (12OZ)",
-        reg: null,
-        lrg: 6.5,
     },
 ];
 

@@ -97,7 +97,7 @@ const Drink = () => {
                                             {mockCoffee?.map((c) => (
                                                 <div className="grid grid-cols-6 gap-4">
                                                     <div
-                                                        className="col-span-4 font-medium text-xs md:text-sm">{c.name}</div>
+                                                        className="col-span-4 font-semibold text-xs md:text-sm text-brown-heavy">{c.name}</div>
                                                     <div
                                                         className="col-start-5 row-start-1 text-center font-medium text-xs md:text-sm">
                                                         {c.reg}
@@ -115,13 +115,13 @@ const Drink = () => {
                                             {mockCoffee2?.map((c) => (
                                                 <div className="grid grid-cols-6 gap-4">
                                                     <div
-                                                        className="col-span-4 font-light text-xs md:text-sm">{c.name}</div>
+                                                        className="col-span-4 font-light italic text-xs md:text-sm">{c.name}</div>
                                                     <div
                                                         className="col-start-5 row-start-1 text-center font-medium text-xs md:text-sm">
                                                         {c.reg}
                                                     </div>
                                                     <div
-                                                        className="col-start-6 row-start-1 text-center font-light text-xs md:text-sm">
+                                                        className="col-start-6 row-start-1 italic text-center font-light text-xs md:text-sm">
                                                         {c.lrg}
                                                     </div>
                                                 </div>
