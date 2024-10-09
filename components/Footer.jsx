@@ -1,8 +1,8 @@
 "use client";
 
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
-import {FaFacebookF} from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -12,37 +12,44 @@ const Footer = () => {
           <h2 className="pb-5">Contact Us</h2>
           <div className={`contact-us flex flex-col gap-6`}>
             <div className="flex gap-3">
-              <FaMapMarkerAlt size={22}/>
+              <FaMapMarkerAlt size={22} />
               <a
-                  href="https://www.google.com/maps/place/Top+Ryde+City+Shopping+Centre/@-33.8122148,151.1055777,18z/data=!3m1!5s0x6b12a5a54c006b6d:0x113b7f3c494b7c7!4m14!1m7!3m6!1s0x6b12a5af8ac4225f:0xb69458817076d25a!2sTop+Ryde+City+Shopping+Centre!8m2!3d-33.8122148!4d151.1062214!16s%2Fm%2F03y5f6v!3m5!1s0x6b12a5af8ac4225f:0xb69458817076d25a!8m2!3d-33.8122148!4d151.1062214!16s%2Fm%2F03y5f6v?hl=en&entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D"
-                  className="text-white"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                href="https://www.google.com/maps/place/Top+Ryde+City+Shopping+Centre/@-33.8122148,151.1055777,18z/data=!3m1!5s0x6b12a5a54c006b6d:0x113b7f3c494b7c7!4m14!1m7!3m6!1s0x6b12a5af8ac4225f:0xb69458817076d25a!2sTop+Ryde+City+Shopping+Centre!8m2!3d-33.8122148!4d151.1062214!16s%2Fm%2F03y5f6v!3m5!1s0x6b12a5af8ac4225f:0xb69458817076d25a!8m2!3d-33.8122148!4d151.1062214!16s%2Fm%2F03y5f6v?hl=en&entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D"
+                className="text-white"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 GRD-3024a, Top Ryde City Shopping Centre
               </a>
-
             </div>
             <div className="flex gap-3">
-              <FaPhoneAlt size={22}/>
+              <FaPhoneAlt size={22} />
               <span className="text-white">0416 399 399</span>
             </div>
             <div className="flex gap-3">
-              <IoMail size={22}/>
+              <IoMail size={22} />
               <a href="mailto:info@sunrisesips.com.au" className="text-white">
                 doublesscoffee@gmail.com
               </a>
             </div>
             <div className="flex gap-3">
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white"
-                 aria-label="Facebook">
-                <FaFacebookF size={32} className="text-blue-facebook"/>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white"
+                aria-label="Facebook"
+              >
+                <FaFacebook size={30} />
               </a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-white" aria-label="Instagram">
-                <div className="outer">
-                  <div className="inner">
-                  </div>
-                </div>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white"
+                aria-label="Instagram"
+              >
+                <FaInstagram size={32} />
               </a>
             </div>
           </div>
