@@ -15,7 +15,7 @@ import {fadeIn} from "@/variants";
 const Drink = () => {
     return (
         <motion.div
-            variants={fadeIn("down", 0.3)}
+            variants={fadeIn("down", 0.2)}
             initial={"hidden"}
             whileInView={"show"}
             viewport={{ once: true, amount: 0.2 }}

@@ -1,12 +1,14 @@
 "use client";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import {useEffect, useState} from "react";
 import {FaArrowLeft} from "react-icons/fa6";
+import Food from "@/components/Food";
+import Drink from "@/components/Drink";
+import Footer from "@/components/Footer";
 
-const Footer = dynamic(() => import("../../components/Footer"),{ssr:true});
-const Food = dynamic(() => import("../../components/Food"),{ssr:true});
-const Drink = dynamic(() => import("../../components/Drink"),{ssr:true});
+// const Footer = dynamic(() => import("../../components/Footer"),{ssr:false});
+// const Food = dynamic(() => import("../../components/Food"),{ssr:false});
+// const Drink = dynamic(() => import("../../components/Drink"),{ssr:false});
 
 const CATEGORIES = {
     FOODS: "FOODS",
