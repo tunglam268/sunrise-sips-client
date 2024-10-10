@@ -1,6 +1,9 @@
 import {imagesVegan, mockGlutenFree, mockVegeterian} from "./Mock";
 import Image from "next/image";
 import MenuItem from "@/components/MenuItem";
+import {fadeIn} from "@/variants";
+import { motion } from "framer-motion";
+
 
 const ImageGrid = () => {
     return (
@@ -44,7 +47,12 @@ const ImageGrid = () => {
 
 const Food = () => {
     return (
-        <div className="md:px-5 px-4 pt-1">
+        <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.2 }}
+            className="md:px-5 px-4 pt-1">
             <div className="flex flex-wrap md:justify-between justify-center gap-4 px-2 md:px-0">
                 <div className="flex flex-col gap-4">
                     <div className="flex flex-col gap-4">
@@ -95,7 +103,7 @@ const Food = () => {
             <div>
                 <div className="text-center m-auto pt-8 font-semibold text-xl">PLEASE ORDER AT THE COUNTER</div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

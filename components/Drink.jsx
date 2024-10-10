@@ -9,10 +9,17 @@ import {
 } from "@/components/Mock";
 import ImageList from "@/components/ImageList";
 import MenuItem from "@/components/MenuItem";
+import { motion } from "framer-motion";
+import {fadeIn} from "@/variants";
 
 const Drink = () => {
     return (
-        <div className="flex flex-wrap sm:flex-nowrap gap-3 sm:gap-10 h-[100%] my-6">
+        <motion.div
+            variants={fadeIn("down", 0.3)}
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.2 }}
+            className="flex flex-wrap sm:flex-nowrap gap-3 sm:gap-10 h-[100%] my-6">
             <div className="w-[100%] sm:w-1/2 px-3">
                 <div className="pb-3">
                     <ImageList data={imagesCoffee}/>
@@ -157,7 +164,7 @@ const Drink = () => {
                     <ImageList data={imagesCoffee}/>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

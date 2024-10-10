@@ -32,7 +32,11 @@ const Menu = () => {
   return (
     <section className={`relative py-12 xl:py-24 md:p-8 xl:p-0`} id="menu">
       <div className={`container mx-auto`}>
-        <div
+        <motion.div
+          variants={fadeIn("left", 0.2)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.2 }}
           className={`max-w-[570px] mx-auto text-center xl:text-right`}
         >
           <h2 className={`mb-3`}>Favorite Menu</h2>
@@ -40,9 +44,13 @@ const Menu = () => {
             View all
             <IoIosArrowRoundForward className={"text-3xl"} />
           </Link>
-        </div>
+        </motion.div>
         {/*menu grid*/}
-        <div
+        <motion.div
+          variants={fadeIn("up", 0.3)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.2 }}
           className={"grid grid-cols-1 gap-x-30 md:grid-cols-3 md:gap-[15px] xl:grid-cols-4"}
         >
           {menu.map((item, index) => {
@@ -68,7 +76,7 @@ const Menu = () => {
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
